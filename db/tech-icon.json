@@ -1,250 +1,323 @@
 [
   {
-    "id":"git",
+    "id": "git",
     "title": "Git",
     "icon": "git.png",
     "description": "소프트웨어 버전 관리 툴",
-    "keywords": ["devops"],
+    "keywords": [
+      "devops"
+    ],
     "recentDay": 0
   },
   {
-    "id":"javascript",
+    "id": "javascript",
     "title": "Javascript",
     "icon": "javascript.png",
     "description": "기본 웹 개발 언어",
-    "keywords": ["frontend", "backend", "mobile", "language"],
+    "keywords": [
+      "frontend",
+      "backend",
+      "mobile",
+      "language"
+    ],
     "recentDay": 0
   },
   {
-    "id":"typescript",
+    "id": "typescript",
     "title": "Typescript",
     "icon": "typescript.png",
     "description": "JS에 타입을 명시할 수 있는 언어",
-    "keywords": ["frontend", "backend", "mobile"],
+    "keywords": [
+      "frontend",
+      "backend",
+      "mobile"
+    ],
     "recentDay": 0
   },
   {
-    "id":"styled-components",
+    "id": "styled-components",
     "title": "Styled Components",
     "icon": "styled-components.png",
     "description": "React 및 ReactNative 개발 시 CSS 생산성 도구",
-    "keywords": ["frontend"],
+    "keywords": [
+      "frontend"
+    ],
     "recentDay": 0
   },
   {
-    "id":"jwt",
+    "id": "jwt",
     "title": "JWT",
     "icon": "jwt.svg",
     "description": "암호키/알고리즘을 사용한 Stateless 웹 토큰",
-    "keywords": ["frontend", "mobile"],
+    "keywords": [
+      "frontend",
+      "mobile"
+    ],
     "recentDay": 0
   },
   {
-    "id":"react",
+    "id": "react",
     "title": "ReactJS",
     "icon": "react.png",
     "description": "웹 개발 생산성을 높여주는 프레임워크",
-    "keywords": ["frontend"],
+    "keywords": [
+      "frontend"
+    ],
     "recentDay": 0
   },
   {
-    "id":"expo",
+    "id": "expo",
     "title": "Expo",
     "icon": "expo.png",
     "description": "ReactNative와 함께 Android/iOS 시스템 기능을 지원하는 프레임워크",
-    "keywords": ["mobile"],
+    "keywords": [
+      "mobile"
+    ],
     "recentDay": 0
   },
   {
-    "id":"nextjs",
+    "id": "nextjs",
     "title": "NextJS",
     "icon": "nextjs.png",
     "description": "SEO가 필요한 React에 SSR 기능을 지원하는 프레임워크",
-    "keywords": ["frontend", "backend"],
+    "keywords": [
+      "frontend",
+      "backend"
+    ],
     "recentDay": 0
   },
   {
-    "id":"nodejs",
+    "id": "nodejs",
     "title": "NodeJS",
     "icon": "nodejs.png",
     "description": "웹브라우저의 기능 한계를 벗어나 시스템콜까지 사용할 수 있는 JS 프로그램",
-    "keywords": ["backend"],
+    "keywords": [
+      "backend"
+    ],
     "recentDay": 0
   },
   {
-    "id":"nestjs",
+    "id": "nestjs",
     "title": "NestJS",
     "icon": "nestjs.png",
     "description": "NodeJS 기반 웹서버개발 생산성 프레임워크",
-    "keywords": ["backend"],
+    "keywords": [
+      "backend"
+    ],
     "recentDay": 30
   },
   {
-    "id":"python",
+    "id": "python",
     "title": "Python",
     "icon": "python.png",
     "description": "인터프리터식, 객체지향적, 고급 프로그래밍 언어",
-    "keywords": ["language", "language", "backend"],
+    "keywords": [
+      "language",
+      "language",
+      "backend"
+    ],
     "recentDay": 7
   },
   {
-    "id":"flask",
+    "id": "flask",
     "title": "Flask",
     "icon": "flask.png",
     "description": "Python 기반 API 서버 개발용 모듈",
-    "keywords": ["backend"],
+    "keywords": [
+      "backend"
+    ],
     "recentDay": 120
   },
   {
-    "id":"ruby",
+    "id": "ruby",
     "title": "Ruby",
     "icon": "ruby.png",
     "description": "인터프리터식, 객체지향적, 고급 프로그래밍 언어",
-    "keywords": ["language", "backend"],
+    "keywords": [
+      "language",
+      "backend"
+    ],
     "recentDay": 0
   },
   {
-    "id":"rails",
+    "id": "rails",
     "title": "Rails",
     "icon": "rails.png",
     "description": "Ruby 기반 웹서버개발 생산성 프레임워크",
-    "keywords": ["backend"],
+    "keywords": [
+      "backend"
+    ],
     "recentDay": 0
   },
   {
-    "id":"aws",
+    "id": "aws",
     "title": "AWS",
     "icon": "aws.png",
     "description": "devopsstructure 기술/자원 제공 서비스",
-    "keywords": ["devops"],
+    "keywords": [
+      "devops"
+    ],
     "recentDay": 120
   },
   {
-    "id":"framework7",
+    "id": "framework7",
     "title": "Framework7",
     "icon": "framework7.png",
     "description": "모바일 Component/Transition 구현이 가능한 웹앱 프레임워크",
-    "keywords": ["frontend"],
+    "keywords": [
+      "frontend"
+    ],
     "recentDay": 0
   },
   {
-    "id":"docker",
+    "id": "docker",
     "title": "Docker",
     "icon": "docker.png",
     "description": "독립적인 환경을 만들어 Image를 Instance화하는 툴",
-    "keywords": ["devops"],
+    "keywords": [
+      "devops"
+    ],
     "recentDay": 30
   },
   {
-    "id":"kubernetes",
+    "id": "kubernetes",
     "title": "Kubernetes",
     "icon": "kubernetes.png",
     "description": "분산컴퓨팅 및 CI/CD, Orchestration 관리 자동화 툴",
-    "keywords": ["devops"],
+    "keywords": [
+      "devops"
+    ],
     "recentDay": 30
   },
   {
-    "id":"nginx",
+    "id": "nginx",
     "title": "NginX",
     "icon": "nginx.png",
     "description": "웹 서버, Proxy 기능 프로그램",
-    "keywords": ["devops"],
+    "keywords": [
+      "devops"
+    ],
     "recentDay": 30
   },
   {
-    "id":"air",
+    "id": "air",
     "title": "Adobe AIR",
     "icon": "air.png",
     "description": "ActionScript 기반 설치형 프로그램 개발 프레임워크",
-    "keywords": ["legacy"],
+    "keywords": [
+      "legacy"
+    ],
     "recentDay": 1000
   },
   {
-    "id":"flash",
+    "id": "flash",
     "title": "Adobe Flash",
     "icon": "flash.png",
     "description": "ActionScript 기반 웹 RIA 개발 프레임워크",
-    "keywords": ["legacy"],
+    "keywords": [
+      "legacy"
+    ],
     "recentDay": 1000
   },
   {
-    "id":"android",
+    "id": "android",
     "title": "Android",
     "icon": "android.png",
     "description": "구글이 가진 모바일 OS",
-    "keywords": ["mobile"],
+    "keywords": [
+      "mobile"
+    ],
     "recentDay": 1000
   },
   {
-    "id":"java",
+    "id": "java",
     "title": "Java",
     "icon": "java.png",
     "description": "점유율 높은 컴파일/인터프리터 하이브리드식, 객체지향 언어",
-    "keywords": ["language"],
+    "keywords": [
+      "language"
+    ],
     "recentDay": 30
   },
   {
-    "id":"ios",
+    "id": "ios",
     "title": "iOS",
     "icon": "ios.png",
     "description": "애플이 가진 모바일 OS",
-    "keywords": ["mobile"],
+    "keywords": [
+      "mobile"
+    ],
     "recentDay": 365
   },
   {
-    "id":"swift",
+    "id": "swift",
     "title": "Swift",
     "icon": "swift.png",
     "description": "iOS, Mac 네이티브 개발을 위한 언어",
-    "keywords": ["mobile"],
+    "keywords": [
+      "mobile"
+    ],
     "recentDay": 365
   },
   {
-    "id":"php",
+    "id": "php",
     "title": "php",
     "icon": "php.png",
     "description": "Python, NodeJS 등이 자리잡기 전 점유율 높았던 언어",
-    "keywords": ["legacy"],
+    "keywords": [
+      "legacy"
+    ],
     "recentDay": 1000
   },
   {
-    "id":"html",
+    "id": "html",
     "title": "HTML",
     "icon": "html.png",
     "description": "웹 레이아웃 개발 마크업 언어",
-    "keywords": ["frontend"],
+    "keywords": [
+      "frontend"
+    ],
     "recentDay": 0
   },
   {
-    "id":"css",
+    "id": "css",
     "title": "CSS",
     "icon": "css.png",
     "description": "웹 레이아웃 스타일링 언어",
-    "keywords": ["frontend"],
+    "keywords": [
+      "frontend"
+    ],
     "recentDay": 0
   },
   {
-    "id":"bootstrap",
+    "id": "bootstrap",
     "title": "Bootstrap",
     "icon": "bootstrap.png",
     "description": "Class Name으로 JS/CSS 작업을 대신해주는 생산성 툴",
-    "keywords": ["web"],
+    "keywords": [
+      "web"
+    ],
     "recentDay": 100
   },
   {
-    "id":"tailwind",
+    "id": "tailwind",
     "title": "Tailwind",
     "icon": "tailwind.svg",
     "description": "Bootstrap과 비슷하나 기능이 더 많고 사용성이 좋아진 스타일링 툴",
-    "keywords": ["web"],
+    "keywords": [
+      "web"
+    ],
     "recentDay": 0
   },
   {
-    "id":"pixi",
+    "id": "pixi",
     "title": "PixiJS",
     "icon": "pixi.png",
     "description": "WebGL기반 그래픽 GPU 가속 라이브러리",
-    "keywords": ["web", "frontend"],
+    "keywords": [
+      "web",
+      "frontend"
+    ],
     "recentDay": 0
   }
 ]

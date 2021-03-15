@@ -1,5 +1,4 @@
 import React from "react";
-import { useRouter } from "next/router";
 import Page from "../../components/Page";
 import WorkDatabase from "../../db/work.json";
 import TechIconDatabase from "../../db/tech-icon.json";
@@ -68,10 +67,7 @@ const Grid = styled.div`
   flex-flow: row wrap;
 `;
 
-const WorkShow = () => {
-  const router = useRouter();
-  const { name } = router.query;
-  const work = WorkDatabase.find((each) => each.id === name);
+const WorkShow = ({work}) => {
   const {
     id,
     linkHref,
@@ -102,6 +98,7 @@ const WorkShow = () => {
           <Grid>
             {techIcons
               ?.map((each) => TechIconDatabase.find((techIcon) => techIcon.id === each))
+              ?.filter(each => !!each)
               ?.map(({ title, icon, id }) => (
                 <TechIcon key={id} id={id} title={title} icon={icon} size={40}/>
               ))}
@@ -113,3 +110,15 @@ const WorkShow = () => {
 };
 
 export default WorkShow;
+
+export async function getStaticPaths() {
+  return {
+    paths: WorkDatabase.map(({id}) => ({ params: { id } })),
+    fallback: false,
+  }
+}
+
+export async function getStaticProps({ params: {id} }) {
+  const work = WorkDatabase.find((each) => each.id === id);
+  return { props: {work} }
+}

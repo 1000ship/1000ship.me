@@ -5,8 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export",
+    "preexport": "npm run build",
+    "deploy": "gh-pages -d out",
+    "predeploy": "npm run export"
   },
+  "homepage": "https://1000ship.me/",
   "dependencies": {
     "next": "10.0.8",
     "react": "17.0.1",
@@ -15,6 +20,7 @@
     "styled-reset": "^4.3.4"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.12.0"
+    "babel-plugin-styled-components": "^1.12.0",
+    "gh-pages": "^3.1.0"
   }
 }

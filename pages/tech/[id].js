@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Page from "../../components/Page";
-import { useRouter } from "next/router";
 import TechIconDatabase from "../../db/tech-icon.json";
 import styled from "styled-components";
 import WorkDatabase from "../../db/work.json";
@@ -26,7 +25,7 @@ const SubTitle = styled.h2`
   font-size: 24px;
   font-weight: bold;
   margin-top: 32px;
-`
+`;
 
 const Description = styled.p``;
 
@@ -40,13 +39,7 @@ const WorkGroup = styled.div`
   }
 `;
 
-const TechShow = () => {
-  const router = useRouter();
-  const { name } = router.query;
-  const techIcon = TechIconDatabase.find((each) => each.id === name);
-
-  console.log( WorkDatabase.filter(each => each.techIcons.includes(name)) )
-
+const TechShow = ({ techIcon }) => {
   return (
     <Page>
       <Content>
@@ -60,9 +53,9 @@ const TechShow = () => {
 
         <SubTitle>관련된 작품</SubTitle>
         <WorkGroup>
-        {WorkDatabase.filter(each => each.techIcons.includes(name)).map((work) => (
-          <Work key={work.id} data={work} />
-        ))}
+          {WorkDatabase.filter((each) => each.techIcons.includes(techIcon.id)).map((work) => (
+            <Work key={work.id} data={work} />
+          ))}
         </WorkGroup>
       </Content>
     </Page>
@@ -70,3 +63,15 @@ const TechShow = () => {
 };
 
 export default TechShow;
+
+export async function getStaticPaths() {
+  return {
+    paths: TechIconDatabase.map(({ id }) => ({ params: { id } })),
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params: { id } }) {
+  const techIcon = TechIconDatabase.find((each) => each.id === id);
+  return { props: { techIcon } };
+}
