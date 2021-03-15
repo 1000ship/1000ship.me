@@ -7,7 +7,6 @@ export default class MyDocument extends Document {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
     
-    console.log( ctx )
     try {
       ctx.renderPage = () =>
         originalRenderPage({ enhanceApp: App => props => sheet.collectStyles(<App {...props} />), })
