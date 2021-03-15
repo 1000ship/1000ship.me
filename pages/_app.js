@@ -10,13 +10,15 @@ function MyApp({ Component, pageProps }) {
     body {
       font-family: 'Noto Sans KR', sans-serif;
     }
+    b {
+      font-weight: bolder;
+    }
   `
   
   return (
     <>
       <Reset/>
       <GlobalStyle/>
-
       <Header/>
       <Component {...pageProps} />
       <Footer/>

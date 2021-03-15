@@ -43,7 +43,7 @@ const Header = () => {
       <Content>
         <Logo><Link href="/">1000ship</Link></Logo>
         <ul>
-          <li><Link href="#">.tech</Link></li>
+          <li><Link href="/tech">.tech</Link></li>
           <li><Link href="#">.work</Link></li>
           <li><Link href="#">.me</Link></li>
         </ul>

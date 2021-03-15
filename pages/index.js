@@ -1,14 +1,10 @@
 import Head from "next/head";
 import { useCallback } from "react";
 import styled from "styled-components";
-import HomeTech from "./_index_tech"
-
-const Container = styled.div`
-  width: 100vw;
-  max-width: 1024px;
-  height: 100vh;
-  margin: 0px auto;
-`;
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Page from "../components/Page";
+import HomeTech from "./_index_tech";
 
 const ProfileContainer = styled.div`
   display: flex;
@@ -50,37 +46,40 @@ const ProfileRight = styled.div`
     font-size: medium;
     font-weight: lighter;
     text-align: center;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .10);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     padding: 16px;
     border-radius: 5px;
   }
   & ul {
     list-style: disc;
+    & > li {
+      font-weight: lighter;
+    }
   }
 `;
 
 function Home() {
   const names = ["1000ship", "천성혁", "千成赫"];
-  const profileImageRef = useCallback(el => {
-    if( !el ) return
-    let scrollY = 0
+  const profileImageRef = useCallback((el) => {
+    if (!el) return;
+    const totalY = el.scrollHeight - el.offsetHeight
+    let scrollY = 0;
+    let targetY = totalY;
+    el.onmousemove = (e) => targetY = (e.layerY / el.offsetHeight) * totalY;
     const scrollAnimate = () => {
-      const dy = (el.scrollHeight - el.offsetHeight - scrollY) * 0.005;
-      scrollY += dy
-      el.scrollTo(0, scrollY)
-      if( el.scrollHeight - el.offsetHeight >= scrollY + 1 )
-        requestAnimationFrame(scrollAnimate)  
-    }
-    requestAnimationFrame(scrollAnimate)
-  })
+      scrollY += (targetY - scrollY) * 0.01;
+      el.scrollTo(0, scrollY);
+      requestAnimationFrame(scrollAnimate);
+    };
+    requestAnimationFrame(scrollAnimate);
+  });
 
   return (
-    <Container>
+    <Page>
       <Head>
         <title>1000ship</title>
         <link rel="icon" href="/favicons/favicon.png" />
       </Head>
-
       <main>
         <ProfileContainer>
           <ProfileLeft ref={profileImageRef}>
@@ -88,11 +87,14 @@ function Home() {
           </ProfileLeft>
           <ProfileRight>
             <div className="horizontal">
-              <h1>천성혁 <span>@1000ship</span></h1>
+              <h1>
+                천성혁 <span>@1000ship</span>
+              </h1>
             </div>
             <p>
               Keep learning, developing, refactoring
-              <br/>Until to be zero dependencies.
+              <br />
+              Until to be zero dependencies.
             </p>
             <ul>
               <li>한국디지털미디어고등학교 웹프로그래밍 전공</li>
@@ -104,9 +106,9 @@ function Home() {
             </ul>
           </ProfileRight>
         </ProfileContainer>
-        <HomeTech/>
+        <HomeTech />
       </main>
-    </Container>
+    </Page>
   );
 }
 
