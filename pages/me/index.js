@@ -4,7 +4,7 @@ import Page from '../../components/Page';
 const MeIndex = () => {
   return (
     <Page>
-      It's me
+      곧 추가할게요.
     </Page>
   );
 };
