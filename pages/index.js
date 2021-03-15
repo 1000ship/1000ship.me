@@ -1,8 +1,6 @@
 import Head from "next/head";
 import { useCallback } from "react";
 import styled from "styled-components";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import Page from "../components/Page";
 import HomeTech from "./_index_tech";
 
@@ -62,7 +60,7 @@ function Home() {
   const names = ["1000ship", "천성혁", "千成赫"];
   const profileImageRef = useCallback((el) => {
     if (!el) return;
-    const totalY = el.scrollHeight - el.offsetHeight
+    const totalY = el.scrollHeight - el.offsetHeight;
     let scrollY = 0;
     let targetY = totalY;
     // el.onmousemove = (e) => targetY = (e.layerY / el.offsetHeight) * totalY;
@@ -80,34 +78,32 @@ function Home() {
         <title>1000ship</title>
         <link rel="icon" href="/favicons/favicon.png" />
       </Head>
-      <main>
-        <ProfileContainer>
-          <ProfileLeft ref={profileImageRef}>
-            <ProfileImage src="/img/profile.jpg" />
-          </ProfileLeft>
-          <ProfileRight>
-            <div className="horizontal">
-              <h1>
-                천성혁 <span>@1000ship</span>
-              </h1>
-            </div>
-            <p>
-              Keep learning, developing, refactoring
-              <br />
-              Until to be zero dependencies.
-            </p>
-            <ul>
-              <li>한국디지털미디어고등학교 웹프로그래밍 전공</li>
-              <li>홍익대학교 컴퓨터공학 전공</li>
-              <li>2016 멋쟁이사자처럼 4기</li>
-              <li>2019 소프트웨어마에스트로 10기 연수</li>
-              <li>2020 홍익대 컴퓨터공학과 학생회</li>
-              <li>2021 인썸니아 React, Rails 개발자</li>
-            </ul>
-          </ProfileRight>
-        </ProfileContainer>
-        <HomeTech />
-      </main>
+      <ProfileContainer>
+        <ProfileLeft ref={profileImageRef}>
+          <ProfileImage src="/img/profile.jpg" />
+        </ProfileLeft>
+        <ProfileRight>
+          <div className="horizontal">
+            <h1>
+              천성혁 <span>@1000ship</span>
+            </h1>
+          </div>
+          <p>
+            Keep learning, developing, refactoring
+            <br />
+            Until to be zero dependencies.
+          </p>
+          <ul>
+            <li>한국디지털미디어고등학교 웹프로그래밍 전공</li>
+            <li>홍익대학교 컴퓨터공학 전공</li>
+            <li>2016 멋쟁이사자처럼 4기</li>
+            <li>2019 소프트웨어마에스트로 10기 연수</li>
+            <li>2020 홍익대 컴퓨터공학과 학생회</li>
+            <li>2021 인썸니아 React, Rails 개발자</li>
+          </ul>
+        </ProfileRight>
+      </ProfileContainer>
+      <HomeTech />
     </Page>
   );
 }

@@ -13,6 +13,10 @@ function MyApp({ Component, pageProps }) {
     b {
       font-weight: bolder;
     }
+    a {
+      text-decoration: inherit;
+      color: inherit;
+    }
   `
   
   return (

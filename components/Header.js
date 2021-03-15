@@ -12,7 +12,7 @@ const Container = styled.header`
     color: inherit;
   }
 `;
-const Content = styled.div`
+const Content = styled.nav`
   display: flex;
   width: 100%;
   max-width: 1024px;
@@ -45,8 +45,8 @@ const Header = () => {
         <Logo><Link href="/">1000ship</Link></Logo>
         <ul>
           <li><Link href="/tech">.tech</Link></li>
-          <li><Link href="#">.work</Link></li>
-          <li><Link href="#">.me</Link></li>
+          <li><Link href="/work">.work</Link></li>
+          <li><Link href="/me">.me</Link></li>
         </ul>
       </Content>
     </Container>

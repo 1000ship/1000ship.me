@@ -4,7 +4,7 @@ import Page from "../../components/Page";
 import TechIcon from "../../components/TechIcon";
 import TechIconDatabase from "../../db/tech-icon.json";
 
-const Main = styled.main`
+const Content = styled.div`
   padding: 8px;
 `;
 
@@ -54,7 +54,7 @@ const Divider = styled.div`
 const TechIndex = () => {
   return (
     <Page>
-      <Main>
+      <Content>
         <Title>
           웹 프론트엔드 개발
           <small>자신있습니다</small>
@@ -162,7 +162,7 @@ const TechIndex = () => {
             )
           )}
         </Grid>
-      </Main>
+      </Content>
     </Page>
   );
 };
