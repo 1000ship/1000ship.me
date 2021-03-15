@@ -1,5 +1,12 @@
 [
   {
+    "title": "Git",
+    "icon": "git.png",
+    "description": "소프트웨어 버전 관리 툴",
+    "keywords": ["devops"],
+    "recentDay": 0
+  },
+  {
     "title": "Javascript",
     "icon": "javascript.png",
     "description": "기본 웹 개발 언어",
@@ -93,8 +100,8 @@
   {
     "title": "AWS",
     "icon": "aws.png",
-    "description": "Infrastructure 기술/자원 제공 서비스",
-    "keywords": ["infra"],
+    "description": "devopsstructure 기술/자원 제공 서비스",
+    "keywords": ["devops"],
     "recentDay": 120
   },
   {
@@ -108,14 +115,21 @@
     "title": "Docker",
     "icon": "docker.png",
     "description": "독립적인 환경을 만들어 Image를 Instance화하는 툴",
-    "keywords": ["infra"],
+    "keywords": ["devops"],
     "recentDay": 30
   },
   {
     "title": "Kubernetes",
     "icon": "kubernetes.png",
     "description": "분산컴퓨팅 및 CI/CD, Orchestration 관리 자동화 툴",
-    "keywords": ["infra"],
+    "keywords": ["devops"],
+    "recentDay": 30
+  },
+  {
+    "title": "NginX",
+    "icon": "nginx.png",
+    "description": "웹 서버, Proxy 기능 프로그램",
+    "keywords": ["devops"],
     "recentDay": 30
   },
   {

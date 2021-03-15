@@ -146,7 +146,7 @@ const TechIndex = () => {
         <Divider />
 
         <Title>
-          Infrastructure
+          Infra / DevOps
           <small>관심있습니다</small>
         </Title>
         <List>
@@ -163,7 +163,7 @@ const TechIndex = () => {
           <li>AWS의 EC2, Route53 사용 경험이 있습니다.</li>
         </List>
         <Grid>
-          {TechIconDatabase.filter((each) => each.keywords.includes("infra")).map(
+          {TechIconDatabase.filter((each) => each.keywords.includes("devops")).map(
             ({ title, icon }, index) => (
               <TechIcon key={index} icon={icon} title={title} />
             )
