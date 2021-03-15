@@ -1,17 +1,20 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
+import React from "react";
+import styled, { css } from "styled-components";
+import Link from "next/link";
 
 const TechIconDir = `/tech-icons/original/`;
 
 const Container = styled.div`
+  cursor:pointer;
+  
   position: relative;
   margin: 8px;
-  ${({size}) => css`
+  ${({ size }) => css`
     width: ${size}px;
     height: ${size}px;
   `}
   transition: 0.5s;
-  
+
   &:hover {
     transform: scale(1.2);
     & > img {
@@ -45,11 +48,15 @@ const Container = styled.div`
   }
 `;
 
-const TechIcon = ({size = 55, icon, title}) => {
-  return <Container size={size} icon={icon}>
-    <img src={`${TechIconDir}${icon}`}/>
-    {title ? <div>{title}</div> : null}
-  </Container>
-}
+const TechIcon = ({ size = 55, icon, title, id }) => {
+  return (
+    <Link href={`/tech/${id}`}>
+      <Container size={size} icon={icon}>
+        <img src={`${TechIconDir}${icon}`} />
+        <div>{title}</div>
+      </Container>
+    </Link>
+  );
+};
 
 export default TechIcon;

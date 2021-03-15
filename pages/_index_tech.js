@@ -24,9 +24,9 @@ const HomeTech = (props) => {
     <Container>
       <Title className="partial-title">🛠 저는 이런 기술을 사용해본 경험이 있어요.</Title>
       <Grid>
-        {TechIconDatabase.map(({icon, title}, index) => {
+        {TechIconDatabase.map(({icon, title, id}, index) => {
           return (
-            <TechIcon key={index} icon={icon} title={title}/>
+            <TechIcon key={index} id={id} icon={icon} title={title}/>
           );
         })}
       </Grid>

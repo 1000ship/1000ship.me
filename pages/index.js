@@ -65,7 +65,7 @@ function Home() {
     const totalY = el.scrollHeight - el.offsetHeight
     let scrollY = 0;
     let targetY = totalY;
-    el.onmousemove = (e) => targetY = (e.layerY / el.offsetHeight) * totalY;
+    // el.onmousemove = (e) => targetY = (e.layerY / el.offsetHeight) * totalY;
     const scrollAnimate = () => {
       scrollY += (targetY - scrollY) * 0.01;
       el.scrollTo(0, scrollY);

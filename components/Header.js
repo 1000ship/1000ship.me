@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Link from 'next/link'
 
 const Container = styled.header`
-  width: 100vw;
+  left: 0;
+  right: 0;
   padding: 13px;
   box-shadow: 0px 4px 4px var(--navbar-shadow-color);
   & a {

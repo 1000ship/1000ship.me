@@ -81,10 +81,10 @@ const TechIndex = () => {
             <li>Jest로 API 기능 테스트 코드를 작성하는 편입니다.</li>
           </SubList>
           <li>
-            SEO의 중요성과 SSR의 필요성을 잘 이해하고 있으며 <b>NextJS</b> 사용 경험이 있습니다.
+            SEO를 위한 SSR 필요성을 이해하며 <b>NextJS</b> 사용 경험이 있습니다.
           </li>
           <li>
-            <b>JWT</b>를 사용한 경험이 있으며 토큰 탈취 위험성을 줄이기 위해 Active/Refresh 토큰을
+            <b>JWT</b>를 사용한 경험이 있으며, 탈취 위험성을 줄이기 위해 Active/Refresh 토큰을
             분리하여 관리한 적이 있습니다.
           </li>
           <li>NPM Publish 경험이 있습니다.</li>
@@ -95,8 +95,8 @@ const TechIndex = () => {
         </List>
         <Grid>
           {TechIconDatabase.filter((each) => each.keywords.includes("frontend")).map(
-            ({ title, icon }, index) => (
-              <TechIcon key={index} icon={icon} title={title} />
+            ({ title, icon, id }, index) => (
+              <TechIcon key={index} id={id} icon={icon} title={title} />
             )
           )}
         </Grid>
@@ -121,24 +121,18 @@ const TechIndex = () => {
           <li>
             2021년부터 <b>NestJS</b>를 접했습니다.
           </li>
-          <li>
-            <b>REST API</b> 디자인을 이해하고 있습니다.
-          </li>
-          <li>
-            <b>MVx</b> 디자인을 이해하고 있습니다.
-          </li>
-          <li>MySQL 및 MariaDB의 Query를 작성할 수 있습니다.</li>
-          <li>(Left|Inner|Right) Join의 중요성을 알고 있습니다.</li>
-          <li>개발 시 ORM을 사용하며 다음과 같은 사용 경험이 있습니다.</li>
+          <li>Join의 중요성을 알고 있습니다.</li>
+          <li>다음과 같은 ORM 사용경험이 있습니다.</li>
           <SubList>
-            <li>Ruby on rails ORM으로 CRUD, Join을 사용했습니다.</li>
-            <li>TypeORM을 NestJS와 함께, Sequelizer를 Express와 함께 사용한 적이 있습니다.</li>
+            <li>Ruby on rails ORM</li>
+            <li>TypeORM과 NestJS</li>
+            <li>Sequelizer과  Express</li>
           </SubList>
         </List>
         <Grid>
           {TechIconDatabase.filter((each) => each.keywords.includes("backend")).map(
-            ({ title, icon }, index) => (
-              <TechIcon key={index} icon={icon} title={title} />
+            ({ title, icon, id }, index) => (
+              <TechIcon key={index} id={id} icon={icon} title={title} />
             )
           )}
         </Grid>
@@ -150,22 +144,21 @@ const TechIndex = () => {
           <small>관심있습니다</small>
         </Title>
         <List>
-          <li>2020년부터 대학교 연구실을 통해 <b>Docker</b>, <b>Kubernetes</b>를 접했습니다.</li>
+          <li>2020년부터 <b>Docker</b>, <b>Kubernetes</b>를 접했습니다.</li>
           <SubList>
             <li>C/C++, Ruby, Java, Python 등 OnlineJudge(채점서버)를 구현한 적 있습니다.</li>
             <li>kubectl의 apply, describe, get, logs 명령을 주로 사용했습니다.</li>
             <li>Pod, Job, ReplicationController, LoadBalancer를 주로 사용했습니다.</li>
           </SubList>
-          <li>5대의 컴퓨터에 CentOS를 설치하고, 마스터 2대 : 워커 3대 Kubernetes를 구축한 경험이 있습니다.</li>
-          <li>DHCP 할당이 아닌 고정 IP로 네트워크를 관리한 경험이 있습니다.</li>
-          <li>포트포워딩을 이해하며 Linux 방화벽 설정과 함께 iptime 설정 경험이 있습니다.</li>
+          <li>5대의 컴퓨터에 CentOS를 설치하고, Kubernetes를 구축한 경험이 있습니다.</li>
+          <li>방화벽, 고정IP, 포트포워딩 설정 경험이 있습니다.</li>
           <li>Nginx의 proxy-pass를 활용한 경험이 있습니다.</li>
           <li>AWS의 EC2, Route53 사용 경험이 있습니다.</li>
         </List>
         <Grid>
           {TechIconDatabase.filter((each) => each.keywords.includes("devops")).map(
-            ({ title, icon }, index) => (
-              <TechIcon key={index} icon={icon} title={title} />
+            ({ title, icon, id }, index) => (
+              <TechIcon key={index} id={id} icon={icon} title={title} />
             )
           )}
         </Grid>
