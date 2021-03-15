@@ -42,6 +42,9 @@ const WorkGroup = styled.div`
 const TechShow = ({ techIcon }) => {
   return (
     <Page>
+      <Head>
+        <title>{techIcon?.title} | 1000ship</title>
+      </Head>
       <Content>
         <img
           src={`/tech-icons/original/${techIcon?.icon}`}

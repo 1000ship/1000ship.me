@@ -57,7 +57,6 @@ const ProfileRight = styled.div`
 `;
 
 function Home() {
-  const names = ["1000ship", "천성혁", "千成赫"];
   const profileImageRef = useCallback((el) => {
     if (!el) return;
     const totalY = el.scrollHeight - el.offsetHeight;
@@ -74,10 +73,6 @@ function Home() {
 
   return (
     <Page>
-      <Head>
-        <title>1000ship</title>
-        <link rel="icon" href="/favicons/favicon.png" />
-      </Head>
       <ProfileContainer>
         <ProfileLeft ref={profileImageRef}>
           <ProfileImage src="/img/profile.jpg" />

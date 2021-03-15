@@ -1,4 +1,5 @@
-import Document from 'next/document'
+import Document, { Main, NextScript } from 'next/document'
+import Head from 'next/head'
 import { ServerStyleSheet } from 'styled-components'
 import { Reset } from 'styled-reset'
 

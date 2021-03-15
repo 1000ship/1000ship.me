@@ -83,6 +83,9 @@ const WorkShow = ({work}) => {
 
   return (
     <Page>
+      <Head>
+        <title>{work?.title} | 1000ship</title>
+      </Head>
       <Content>
         <img src={`/img/workspace/${imageName}`} />
         <div>

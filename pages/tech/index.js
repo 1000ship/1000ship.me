@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import styled from "styled-components";
 import Page from "../../components/Page";
@@ -54,6 +55,9 @@ const Divider = styled.div`
 const TechIndex = () => {
   return (
     <Page>
+      <Head>
+        <title>Tech Icons | 1000ship</title>
+      </Head>
       <Content>
         <Title>
           웹 프론트엔드 개발

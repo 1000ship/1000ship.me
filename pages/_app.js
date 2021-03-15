@@ -23,6 +23,14 @@ function MyApp({ Component, pageProps }) {
     <>
       <Reset/>
       <GlobalStyle/>
+      <Head>
+        <title>Junior Software Developer 성혁 | 1000ship</title>
+        <link rel="icon" href="/favicons/favicon.png" />
+        <meta name="description" content="아직 배울게 많은 주니어 개발자입니다.  개발 기술, 만든 작품을 소개하고자 합니다." />
+        <meta name="keywords" content="천성혁,성혁,React,Expo,NextJS,NestJS,홍익대학교,프론트엔드,백엔드,인프라" />
+        <meta charset="utf-8" />
+        <meta lang="ko" />
+      </Head>
       <Header/>
       <Component {...pageProps} />
       <Footer/>

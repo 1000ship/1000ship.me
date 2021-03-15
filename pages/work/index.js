@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import styled from "styled-components";
 import Page from "../../components/Page";
@@ -17,6 +18,9 @@ const Section = styled.section`
 const WorkIndex = () => {
   return (
     <Page>
+      <Head>
+        <title>Work | 1000ship</title>
+      </Head>
       <Section>
         {WorkDatabase.map((work) => (
           <Work key={work.id} data={work} />

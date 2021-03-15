@@ -47,7 +47,7 @@ const Work = ({data}) => {
   return (
     <Link href={`/work/${id}`}>
       <Article>
-        <img src={`/img/workspace/${imageName}`} />
+        <img src={`/img/workspace/${imageName}`} alt={title}/>
         <h2>{title}</h2>
         <p>{description}</p>
         <small>{createdYear}</small>

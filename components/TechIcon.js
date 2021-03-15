@@ -52,7 +52,7 @@ const TechIcon = ({ size = 55, icon, title, id }) => {
   return (
     <Link href={`/tech/${id}`}>
       <Container size={size} icon={icon}>
-        <img src={`${TechIconDir}${icon}`} />
+        <img src={`${TechIconDir}${icon}`} alt={title}/>
         <div>{title}</div>
       </Container>
     </Link>
