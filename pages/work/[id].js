@@ -4,6 +4,7 @@ import WorkDatabase from "../../db/work.json";
 import TechIconDatabase from "../../db/tech-icon.json";
 import TechIcon from "../../components/TechIcon";
 import styled from "styled-components";
+import Head from "next/head"
 
 const Content = styled.section`
   height: 70vh;
