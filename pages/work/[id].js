@@ -7,16 +7,22 @@ import styled from "styled-components";
 import Head from "next/head"
 
 const Content = styled.section`
+  padding: 8px;
   height: 70vh;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   & > img {
-    flex: 1 0 200px;
+    width: 300px;
+    height: 300px;
     margin-right: 16px;
     border-radius: 8px;
-    object-fit: contain;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   & > div {
+    margin: 0px 8px;
     flex: 1 0 300px;
     display: flex;
     flex-direction: column;
@@ -68,6 +74,10 @@ const Grid = styled.div`
   flex-flow: row wrap;
 `;
 
+const Spacer = styled.div`
+  flex: 1;
+`
+
 const WorkShow = ({work}) => {
   const {
     id,
@@ -98,6 +108,7 @@ const WorkShow = ({work}) => {
               <Tag>{tag}</Tag>
             ))}
           </TagGroup>
+          <Spacer />
           <a href={linkHref} target="_blank">자세히보기</a>
           <Grid>
             {techIcons

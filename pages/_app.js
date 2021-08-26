@@ -1,8 +1,18 @@
-import { createGlobalStyle } from "styled-components";
-import { Reset } from "styled-reset";
 import Head from "next/head";
-import Header from "../components/Header";
+import styled, { createGlobalStyle } from "styled-components";
+import { Reset } from "styled-reset";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
+
+const ViewPort = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+`
+
+const Spacer = styled.div`
+  flex: 1;
+`
 
 function MyApp({ Component, pageProps }) {
   const GlobalStyle = createGlobalStyle`
@@ -31,9 +41,12 @@ function MyApp({ Component, pageProps }) {
         <meta charset="utf-8" />
         <meta lang="ko" />
       </Head>
-      <Header/>
-      <Component {...pageProps} />
-      <Footer/>
+      <ViewPort>
+        <Header/>
+        <Component {...pageProps} />
+        <Spacer/>
+        <Footer/>
+      </ViewPort>
       <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     </>
   );

@@ -28,15 +28,22 @@ const SubTitle = styled.h2`
   margin-top: 32px;
 `;
 
-const Description = styled.p``;
+const Description = styled.p`
+  color: #333;
+`;
 
-const WorkGroup = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+const WorkGroup = styled.section`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
   & > article {
     width: 250px;
-    margin: 4px;
+    margin: 8px;
   }
 `;
 
@@ -52,7 +59,7 @@ const TechShow = ({ techIcon }) => {
         <img
           src={`/tech-icons/original/${techIcon?.icon}`}
           alt={techIcon?.title}
-          style={{ width: 200, height: 200, objectFit: "contain" }}
+          style={{ width: 150, height: 150, objectFit: "contain" }}
         />
         <Title>{techIcon?.title}</Title>
         <Description>{techIcon?.description}</Description>
