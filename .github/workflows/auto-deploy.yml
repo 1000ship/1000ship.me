@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
       - name: Install node_modules
@@ -18,8 +17,14 @@ jobs:
         with:
           cmd: install
           
-      - name: Deploy homepage
+      - name: Build homepage
         uses: borales/actions-yarn@v2.3.0
         with:
-          cmd: deploy
-        
+          cmd: predeploy
+
+      - name: Deploy homepage
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          enable_jekyll: false
