@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Install node_modules
+        uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: install
+          
+      - name: Deploy homepage
+        uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: deploy
+        
