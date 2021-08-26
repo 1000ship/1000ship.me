@@ -15,9 +15,13 @@ const Article = styled.article`
     margin: 4px 0px;
   }
   img {
+    transition: 0.2s;
     border-radius: 8px;
     max-height: 400px;
     object-fit: cover;
+    &:hover {
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    }
   }
   h2 {
     font-size: 18px;
@@ -32,6 +36,8 @@ const Article = styled.article`
 `;
 
 const Work = ({data}) => {
+  if( !data ) return <div></div>
+  
   const {
     id,
     linkHref,

@@ -1,5 +1,6 @@
-import React from 'react';
-import Page from '../../components/Page';
+import React from "react";
+import Page from "../../components/Page";
+import Head from "next/head";
 
 const MeIndex = () => {
   return (

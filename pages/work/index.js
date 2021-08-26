@@ -10,7 +10,7 @@ const Section = styled.section`
   flex-flow: row wrap;
   justify-content: space-evenly;
   & > * {
-    flex: 1 0 300px;
+    flex: 0 0 300px;
     margin: 8px;
   }
 `;
