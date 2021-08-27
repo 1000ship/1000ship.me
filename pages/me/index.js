@@ -1,7 +1,7 @@
-import React from "react";
-import Page from "../../components/Page";
 import Head from "next/head";
+import React from "react";
 import styled from "styled-components";
+import Page from "../../components/Page";
 
 const Description = styled.p`
   margin-top: 50px;
@@ -31,6 +31,43 @@ const Content = styled.main`
     border-radius: 4px;
     &:hover {
       background-color: #EEE;
+    }
+  }
+`
+
+const GitContributionChart = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  padding: 8px;
+
+  & > h2 {
+    margin-top: 16px;
+    margin-left: 8px;
+    font-weight: medium;
+    font-size: 16px;
+    & > a { 
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      padding: 4px 8px;
+      border-radius: 4px;
+      & > span {
+        margin-left: 4px;
+      }
+      &:hover {
+        background-color: #EEE;
+      }
+    }
+  }
+  & > div {
+    margin-bottom: 16px;
+    max-width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    & > img {
+      margin: 16px;
     }
   }
 `
@@ -78,6 +115,16 @@ const MeIndex = () => {
       <Head>
         <title>Me | 1000ship</title>
       </Head>
+      <GitContributionChart>
+        <h2><a href="https://github.com/1000ship" target="_blank"><ion-icon name="logo-github"/><span>1000ship</span></a></h2>
+        <div>
+          <img src="https://ghchart.rshah.org/1000ship" alt="1000ship's Github Contribution Chart" />
+        </div>
+        <h2><a href="https://github.com/insomenia-seonghyeok" target="_blank"><ion-icon name="logo-github"/><span>insomenia-seonghyeok</span></a></h2>
+        <div>
+          <img src="https://ghchart.rshah.org/insomenia-seonghyeok" alt="insomenia-seonghyeok's Github Contribution Chart" />
+        </div>
+      </GitContributionChart>
       <Content>
         <Section>
           <h2>놀랍게도 저는 프로그래밍'만' 좋아하진 않아요.</h2>
