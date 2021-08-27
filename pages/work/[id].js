@@ -16,10 +16,12 @@ const Content = styled.section`
   & > img {
     width: 300px;
     height: 300px;
-    margin-right: 16px;
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    @media (min-width: 600px) {
+      margin-right: 16px;
+    }
   }
   & > div {
     margin: 0px 8px;
@@ -27,6 +29,7 @@ const Content = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     & > * {
       margin: 4px 0px;
     }

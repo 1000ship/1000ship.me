@@ -49,6 +49,7 @@ const ProfileRight = styled.div`
     border-radius: 5px;
   }
   & ul {
+    padding: 16px;
     list-style: disc;
     & > li {
       margin: 4px;
@@ -72,7 +73,6 @@ function Home() {
     const totalY = el.scrollHeight - el.offsetHeight;
     let scrollY = 0;
     let targetY = totalY;
-    // el.onmousemove = (e) => targetY = (e.layerY / el.offsetHeight) * totalY;
     const scrollAnimate = () => {
       scrollY += (targetY - scrollY) * 0.01;
       el.scrollTo(0, scrollY);
@@ -108,7 +108,7 @@ function Home() {
             <li><b>소프트웨어마에스트로</b> 10기 <i>— 2019</i></li>
             <li><b>홍익대 컴퓨터공학과 학생회</b> <i>— 2020</i></li>
             <li><b>Naver AI Lab</b> 프리랜서 <i>— 2021-Present</i></li>
-            <li><b>인썸니아</b> 프리랜서 <i>— 2021-Present</i></li>
+            <li><b>인썸니아</b> 정규직 <i>— 2021-Present</i></li>
           </ul>
         </ProfileRight>
       </ProfileContainer>

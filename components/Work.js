@@ -14,15 +14,23 @@ const Article = styled.article`
     width: 100%;
     margin: 4px 0px;
   }
+
+  /* title */
   h2 {
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 8px;
   }
+  /* description */
   p {
-    color: #555;
+    color: #666;
+    font-weight: lighter;
+    margin-bottom: 4px;
   }
+  /* createdYear */
   small {
-    font-size: 14px;
+    font-size: 12px;
+    color: #888;
   }
 `;
 

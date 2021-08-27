@@ -12,7 +12,7 @@ const Description = styled.p`
 `
 
 const Content = styled.main`
-  padding: 8px;
+  padding: 16px;
 
   & h2 {
     font-size: large;

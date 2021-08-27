@@ -22,8 +22,7 @@ const Title = styled.h2`
   flex-direction: column;
   font-size: 24px;
   font-weight: bold;
-  margin: 12px 0px;
-  margin-top: 24px;
+  margin: 30px 0px;
   text-align: center;
   
   & small {

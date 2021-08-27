@@ -12,6 +12,7 @@ const Content = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-top: 24px;
   & > * {
     margin: 8px 0px;
   }
@@ -34,16 +35,17 @@ const Description = styled.p`
 
 const WorkGroup = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  @media (max-width: 1024px) {
-    grid-template-columns: 1fr 1fr 1fr;
+  padding: 16px;
+  grid-gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
   }
   @media (max-width: 600px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
-  & > article {
-    width: 250px;
-    margin: 8px;
+  @media (max-width: 300px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
@@ -66,7 +68,7 @@ const TechShow = ({ techIcon }) => {
 
         {relativeWorks.length > 0 && (
           <>
-            <SubTitle>관련된 작품</SubTitle>
+            <SubTitle>연관 작품</SubTitle>
             <WorkGroup>
               {relativeWorks.map((work) => (
                 <Work key={work.id} data={work} />
