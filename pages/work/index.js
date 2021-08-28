@@ -6,8 +6,21 @@ import Work from "../../components/Work";
 import WorkDatabase from "../../db/work.json";
 
 const Section = styled.section`
-  margin: 40px 0px;
+  &::after {
+    content: "";
+    display: block;
+    height: 40px;
+  }
 `;
+
+const SectionHeader = styled.div`
+  padding-top: 8px;
+  background-color: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 45px;
+  z-index: 10;
+`
 
 const SectionTitle = styled.h2`
   font-size: 18px;
@@ -55,8 +68,10 @@ const WorkIndex = () => {
       </Head>
       {yearSections.map((year) => 
         <Section key={year}>
-          <SectionTitle>{year}</SectionTitle>
-          <Split/>
+          <SectionHeader>
+            <SectionTitle>{year}</SectionTitle>
+            <Split/>
+          </SectionHeader>
           <WorkGrid>
             {WorkDatabase.filter(work => work.createdYear === year).map((work) => (
               <Work key={work.id} data={work} />
