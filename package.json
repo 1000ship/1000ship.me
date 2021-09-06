@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
     "preexport": "yarn build",
-    "deploy": "gh-pages -d out --dotfiles",
-    "predeploy": "yarn export && cp CNAME out && touch out/.nojekyll"
+    "export": "yarn preexport && next export",
+    "predeploy": "yarn export && cp CNAME out && touch out/.nojekyll",
+    "deploy": "yarn predeploy && gh-pages -d out --dotfiles"
   },
   "homepage": "https://1000ship.me/",
   "dependencies": {
