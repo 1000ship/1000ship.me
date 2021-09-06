@@ -1,1 +1,0 @@
-_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[9],{gcoN:function(_,n,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/_index_tech",function(){return o("FfAr")}])}},[["gcoN",0,1,2,3,5]]]);
