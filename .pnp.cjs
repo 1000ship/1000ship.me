@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:07d224a821e07be16cf128b55faa32a8eae426436668948a19856aa75776a595d5aace0ac0c94b7b5797cc40c1390496186856f511cf10a37901b75da7549d52#npm:10.0.8"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:07d224a821e07be16cf128b55faa32a8eae426436668948a19856aa75776a595d5aace0ac0c94b7b5797cc40c1390496186856f511cf10a37901b75da7549d52#npm:17.0.1"],
+            ["react-is", "npm:17.0.2"],
             ["styled-components", "virtual:07d224a821e07be16cf128b55faa32a8eae426436668948a19856aa75776a595d5aace0ac0c94b7b5797cc40c1390496186856f511cf10a37901b75da7549d52#npm:5.3.1"],
             ["styled-reset", "virtual:07d224a821e07be16cf128b55faa32a8eae426436668948a19856aa75776a595d5aace0ac0c94b7b5797cc40c1390496186856f511cf10a37901b75da7549d52#npm:4.3.4"]
           ],
@@ -56,6 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:07d224a821e07be16cf128b55faa32a8eae426436668948a19856aa75776a595d5aace0ac0c94b7b5797cc40c1390496186856f511cf10a37901b75da7549d52#npm:10.0.8"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:07d224a821e07be16cf128b55faa32a8eae426436668948a19856aa75776a595d5aace0ac0c94b7b5797cc40c1390496186856f511cf10a37901b75da7549d52#npm:17.0.1"],
+            ["react-is", "npm:17.0.2"],
             ["styled-components", "virtual:07d224a821e07be16cf128b55faa32a8eae426436668948a19856aa75776a595d5aace0ac0c94b7b5797cc40c1390496186856f511cf10a37901b75da7549d52#npm:5.3.1"],
             ["styled-reset", "virtual:07d224a821e07be16cf128b55faa32a8eae426436668948a19856aa75776a595d5aace0ac0c94b7b5797cc40c1390496186856f511cf10a37901b75da7549d52#npm:4.3.4"]
           ],
@@ -3016,6 +3018,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-is", "npm:16.13.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:17.0.2", {
+          "packageLocation": "./.yarn/cache/react-is-npm-17.0.2-091bbb8db6-9d6d111d89.zip/node_modules/react-is/",
+          "packageDependencies": [
+            ["react-is", "npm:17.0.2"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["react-refresh", [
@@ -3465,7 +3474,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hoist-non-react-statics", "npm:3.3.2"],
             ["react", "npm:17.0.1"],
             ["react-dom", "virtual:07d224a821e07be16cf128b55faa32a8eae426436668948a19856aa75776a595d5aace0ac0c94b7b5797cc40c1390496186856f511cf10a37901b75da7549d52#npm:17.0.1"],
-            ["react-is", null],
+            ["react-is", "npm:17.0.2"],
             ["shallowequal", "npm:1.1.0"],
             ["supports-color", "npm:5.5.0"]
           ],
