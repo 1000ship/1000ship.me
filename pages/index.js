@@ -78,7 +78,8 @@ function Home() {
       el.scrollTo(0, scrollY);
       requestAnimationFrame(scrollAnimate);
     };
-    requestAnimationFrame(scrollAnimate);
+    requestAnimationFrame(scrollAnimate)
+    el.querySelector("img").onload = () => requestAnimationFrame(scrollAnimate);
   });
 
   return (
@@ -107,8 +108,8 @@ function Home() {
             <li><b>멋쟁이사자처럼</b> 4기 <i>— 2016</i></li>
             <li><b>소프트웨어마에스트로</b> 10기 <i>— 2019</i></li>
             <li><b>홍익대 컴퓨터공학과 학생회</b> <i>— 2020</i></li>
-            <li><b>Naver AI Lab</b> 프리랜서 <i>— 2021-Present</i></li>
-            <li><b>인썸니아</b> 정규직 <i>— 2021-Present</i></li>
+            <li><b>인썸니아</b> 프리랜서 <i>— 2020.12-2021.09</i></li>
+            <li><b>Naver AI Lab</b> 프리랜서 <i>— 2021.08-Present</i></li>
           </ul>
         </ProfileRight>
       </ProfileContainer>
