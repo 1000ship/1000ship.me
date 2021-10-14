@@ -110,6 +110,7 @@ function Home() {
             <li><b>홍익대 컴퓨터공학과 학생회</b> <i>— 2020</i></li>
             <li><b>인썸니아</b> 프리랜서 <i>— 2020.12-2021.09</i></li>
             <li><b>Naver AI Lab</b> 프리랜서 <i>— 2021.08-Present</i></li>
+            <li><a href="https://dante.company" target="_blank"><b>Dante Company</b></a> 대표 <i>— 2021.10-Present</i></li>
           </ul>
         </ProfileRight>
       </ProfileContainer>
