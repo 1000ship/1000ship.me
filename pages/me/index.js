@@ -147,11 +147,14 @@ const MeIndex = () => {
         </Section>
 
         <Section>
-          <h2>저는 디지털노마드를 떠날 계획이에요.</h2>
+          <h2>저는 디지털노마드 생활 중이에요.</h2>
           <List>
-            <li><b>Austin, Texas</b> <i>— 2021.10-2022.01</i></li>
+            <li><b>🇺🇸 Austin, Texas | St. Bonifacius, Minnesota</b> <i>— 2021.10-2022.01</i></li>
           </List>
-          <p>다음은 어디로 가게될까요?</p>
+          <br/>
+          <p>그리고 여러 여행을 다닌 적 있어요.</p>
+          <br/>
+          <iframe width="100%" height={500} style={{backgroundColor: "#f9f9f9"}} src="https://nomadlist.com/@dantechun/embed" scrolling="no" frameBorder={0} allowFullScreen></iframe>
         </Section>
       </Content>
 
