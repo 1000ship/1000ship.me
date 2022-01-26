@@ -73,7 +73,7 @@
     "keywords": [
       "mobile"
     ],
-    "recentDay": 0
+    "recentDay": 100
   },
   {
     "id": "nextjs",
@@ -104,7 +104,7 @@
     "keywords": [
       "backend"
     ],
-    "recentDay": 30
+    "recentDay": 200
   },
   {
     "id": "python",
@@ -116,7 +116,7 @@
       "language",
       "backend"
     ],
-    "recentDay": 7
+    "recentDay": 100
   },
   {
     "id": "flask",
@@ -126,7 +126,7 @@
     "keywords": [
       "backend"
     ],
-    "recentDay": 120
+    "recentDay": 300
   },
   {
     "id": "ruby",
@@ -137,7 +137,7 @@
       "language",
       "backend"
     ],
-    "recentDay": 0
+    "recentDay": 60
   },
   {
     "id": "rails",
@@ -147,7 +147,7 @@
     "keywords": [
       "backend"
     ],
-    "recentDay": 0
+    "recentDay": 60
   },
   {
     "id": "aws",
@@ -157,7 +157,7 @@
     "keywords": [
       "devops"
     ],
-    "recentDay": 120
+    "recentDay": 0
   },
   {
     "id": "framework7",
@@ -167,7 +167,7 @@
     "keywords": [
       "frontend"
     ],
-    "recentDay": 0
+    "recentDay": 300
   },
   {
     "id": "docker",
@@ -177,7 +177,7 @@
     "keywords": [
       "devops"
     ],
-    "recentDay": 30
+    "recentDay": 0
   },
   {
     "id": "kubernetes",
@@ -187,7 +187,7 @@
     "keywords": [
       "devops"
     ],
-    "recentDay": 30
+    "recentDay": 300
   },
   {
     "id": "nginx",
@@ -207,7 +207,7 @@
     "keywords": [
       "legacy"
     ],
-    "recentDay": 1000
+    "recentDay": 3000
   },
   {
     "id": "flash",
@@ -217,7 +217,7 @@
     "keywords": [
       "legacy"
     ],
-    "recentDay": 1000
+    "recentDay": 3000
   },
   {
     "id": "android",
@@ -237,7 +237,7 @@
     "keywords": [
       "language"
     ],
-    "recentDay": 30
+    "recentDay": 60
   },
   {
     "id": "ios",
@@ -247,7 +247,7 @@
     "keywords": [
       "mobile"
     ],
-    "recentDay": 365
+    "recentDay": 600
   },
   {
     "id": "swift",
@@ -257,7 +257,7 @@
     "keywords": [
       "mobile"
     ],
-    "recentDay": 365
+    "recentDay": 600
   },
   {
     "id": "php",
@@ -267,7 +267,7 @@
     "keywords": [
       "legacy"
     ],
-    "recentDay": 1000
+    "recentDay": 2000
   },
   {
     "id": "html",
@@ -297,7 +297,7 @@
     "keywords": [
       "web"
     ],
-    "recentDay": 100
+    "recentDay": 300
   },
   {
     "id": "tailwind",
@@ -317,6 +317,17 @@
     "keywords": [
       "web",
       "frontend"
+    ],
+    "recentDay": 300
+  },
+  {
+    "id": "strapi",
+    "title": "strapi",
+    "icon": "strapi.svg",
+    "description": "생산성 좋은 백엔드 개발 프레임워크",
+    "keywords": [
+      "web",
+      "backend"
     ],
     "recentDay": 0
   }

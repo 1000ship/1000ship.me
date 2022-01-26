@@ -1,5 +1,43 @@
 [
   {
+    "linkHref": "https://futuremeal.co.kr/",
+    "id": "futuremeal",
+    "imageName": "futuremeal.png",
+    "supportVideo": false,
+    "videoName": null,
+    "title": "퓨쳐밀",
+    "description": "B2B 식품 아웃소싱 플랫폼",
+    "createdYear": "2022년",
+    "tags": [
+      "B2B",
+      "사업"
+    ],
+    "techIcons": [
+      "typescript",
+      "aws",
+      "strapi"
+    ]
+  },
+  {
+    "linkHref": "https://lingerwater.co.kr/",
+    "id": "lingtea-map",
+    "imageName": "lingtea-map.png",
+    "supportVideo": false,
+    "videoName": null,
+    "title": "링티 약국지도",
+    "description": "링티 제휴 약국지점을 지도로 찾아보세요.",
+    "createdYear": "2021년",
+    "tags": [
+      "링티",
+      "외주개발"
+    ],
+    "techIcons": [
+      "typescript",
+      "react",
+      "aws"
+    ]
+  },
+  {
     "linkHref": "https://waterbrush.1000ship.me/",
     "id": "water-brush",
     "imageName": "water-brush.gif",

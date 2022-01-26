@@ -116,13 +116,9 @@ const MeIndex = () => {
         <title>Me | 1000ship</title>
       </Head>
       <GitContributionChart>
-        <h2><a href="https://github.com/1000ship" target="_blank"><ion-icon name="logo-github"/><span>1000ship</span></a></h2>
+        <h2><a href="https://github.com/1000ship" target="_blank"><ion-icon name="logo-github" /><span>1000ship</span></a></h2>
         <div>
           <img src="https://ghchart.rshah.org/1000ship" alt="1000ship's Github Contribution Chart" />
-        </div>
-        <h2><a href="https://github.com/insomenia-seonghyeok" target="_blank"><ion-icon name="logo-github"/><span>insomenia-seonghyeok</span></a></h2>
-        <div>
-          <img src="https://ghchart.rshah.org/insomenia-seonghyeok" alt="insomenia-seonghyeok's Github Contribution Chart" />
         </div>
       </GitContributionChart>
       <Content>
@@ -137,7 +133,7 @@ const MeIndex = () => {
         <Section>
           <h2>저는 이런 음악을 좋아해요.</h2>
           <List>
-          <li>
+            <li>
               <a href={URL.LoFi} target="_blank">Lo-Fi</a>
             </li>
             <li>
@@ -151,14 +147,14 @@ const MeIndex = () => {
           <List>
             <li><b>🇺🇸 Austin, Texas | St. Bonifacius, Minnesota</b> <i>— 2021.10-2022.01</i></li>
           </List>
-          <br/>
+          <br />
           <p>그리고 여러 여행을 다닌 적 있어요.</p>
-          <br/>
-          <iframe width="100%" height={500} style={{backgroundColor: "#f9f9f9"}} src="https://nomadlist.com/@dantechun/embed" scrolling="no" frameBorder={0} allowFullScreen></iframe>
+          <br />
+          <iframe width="100%" height={500} style={{ backgroundColor: "#f9f9f9" }} src="https://nomadlist.com/@dantechun/embed" scrolling="no" frameBorder={0} allowFullScreen></iframe>
         </Section>
       </Content>
 
-      <Description>찾아와주셔서 감사합니다!<br/>여러분 주변 친구, 지인들처럼 한 명의 사람으로서 저를 소개합니다.<br/>계속해서 페이지 내용을 업데이트할 예정입니다!</Description>
+      <Description>찾아와주셔서 감사합니다!<br />여러분 주변 친구, 지인들처럼 한 명의 사람으로서 저를 소개합니다.<br />계속해서 페이지 내용을 업데이트할 예정입니다!</Description>
     </Page>
   );
 };

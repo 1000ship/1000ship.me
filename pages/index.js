@@ -94,7 +94,7 @@ function Home() {
         <ProfileRight>
           <div className="horizontal">
             <h1>
-              천성혁 <span>Dante</span>
+              천성혁 <span>Dante Chun</span>
             </h1>
           </div>
           <p>
@@ -107,7 +107,6 @@ function Home() {
             <li><b>홍익대학교 컴퓨터공학</b> 조기졸업 <i>— 2016-2021</i></li>
             <li><b>멋쟁이사자처럼</b> 4기 <i>— 2016</i></li>
             <li><b>소프트웨어마에스트로</b> 10기 <i>— 2019</i></li>
-            <li><b>홍익대 컴퓨터공학과 학생회</b> <i>— 2020</i></li>
             <li><b>인썸니아</b> 프리랜서 <i>— 2020.12-2021.09</i></li>
             <li><b>Naver AI Lab</b> 프리랜서 <i>— 2021.08-2021.11</i></li>
             <li><a href="https://dante.company" target="_blank"><b>Dante Company</b></a> 대표 <i>— 2021.10-Present</i></li>
