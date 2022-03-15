@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const TechIconDir = `/tech-icons/original/`;
 
-const Container = styled.div`
+const Container = styled.a`
   cursor:pointer;
   
   position: relative;
@@ -52,7 +52,7 @@ const TechIcon = ({ size = 55, icon, title, id }) => {
   return (
     <Link href={`/tech/${id}`}>
       <Container size={size} icon={icon}>
-        <img src={`${TechIconDir}${icon}`} alt={title}/>
+        <img src={`${TechIconDir}${icon}`} alt={title} />
         <div>{title}</div>
       </Container>
     </Link>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /tech
+Allow: /work
+Allow: /me
+Allow: /work

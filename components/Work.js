@@ -35,7 +35,7 @@ const Article = styled.article`
 `;
 
 const Image = styled.img`
-  ${({loaded}) => (loaded ? css`` : css`
+  ${({ loaded }) => (loaded ? css`` : css`
     height: 300px;
     background-color: #EEE;
   `)}
@@ -49,11 +49,11 @@ const Image = styled.img`
   }
 `
 
-const Work = ({data}) => {
-  if( !data ) return <div></div>
+const Work = ({ data }) => {
+  if (!data) return <div></div>
 
   const [loaded, setLoaded] = useState(false)
-  
+
   const {
     id,
     linkHref,
@@ -68,12 +68,14 @@ const Work = ({data}) => {
   } = data;
   return (
     <Link href={`/work/${id}`}>
-      <Article>
-        <Image src={`/img/workspace/${imageName}`} alt={title} onLoad={() => setLoaded(true)} loaded={loaded}/>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <small>{createdYear}</small>
-      </Article>
+      <a>
+        <Article>
+          <Image src={`/img/workspace/${imageName}`} alt={title} onLoad={() => setLoaded(true)} loaded={loaded} />
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <small>{createdYear}</small>
+        </Article>
+      </a>
     </Link>
   );
 };
