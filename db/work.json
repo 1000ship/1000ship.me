@@ -1,5 +1,44 @@
 [
   {
+    "linkHref": "https://cafebox.kr/",
+    "id": "cafebox",
+    "imageName": "cafebox.png",
+    "supportVideo": false,
+    "videoName": null,
+    "title": "카페박스",
+    "description": "커피 구독 서비스 카페박스, 개발 이후 이어받아 새로운 기능 개발과 유지보수를 담당했어요",
+    "createdYear": "2022년",
+    "tags": [
+      "커피", "구독"
+    ],
+    "techIcons": [
+      "typescript",
+      "nextjs",
+      "aws",
+      "springboot",
+      "kotlin"
+    ]
+  },
+  {
+    "linkHref": "https://bingocorp.kr/",
+    "id": "bingo-corporation",
+    "imageName": "bingo-corporation.webp",
+    "supportVideo": false,
+    "videoName": null,
+    "title": "주식회사 빙고코퍼레이션",
+    "description": "커머스 포화시장 속 경험 있는 사람들과 새로운 커머스 산업을 준비하는 주식회사 빙고코퍼레이션의 개발 총괄을 담당하고 있어요",
+    "createdYear": "2022년",
+    "tags": [
+      "개발총괄",
+      "커머스"
+    ],
+    "techIcons": [
+      "typescript",
+      "nextjs",
+      "aws"
+    ]
+  },
+  {
     "linkHref": "https://futuremeal.co.kr/",
     "id": "futuremeal",
     "imageName": "futuremeal.png",
