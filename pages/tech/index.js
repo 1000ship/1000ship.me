@@ -77,27 +77,18 @@ const TechIndex = () => {
               HMR, JSX, SASS을 위한 <b>Webpack 세팅 경험</b>이 있습니다.
             </li>
             <li>
-              <b>React 프레임워크</b>를 자주 사용합니다.
-            </li>
-            <SubList>
-              <li>
-                useContext, useReducer, Recoil를 자주쓰고, redux와 redux-thunk 사용 경험도 있으나 자주
-                쓰진 않습니다.
-              </li>
-              <li>Jest로 API 기능 테스트 코드를 작성하는 편입니다.</li>
-            </SubList>
-            <li>
               SEO를 위한 SSR 필요성을 이해하며 <b>NextJS</b> 사용 경험이 있습니다.
             </li>
-            <li>
-              <b>JWT</b>를 사용한 경험이 있으며, 탈취 위험성을 줄이기 위해 Active/Refresh 토큰을
-              분리하여 관리한 적이 있습니다.
-            </li>
-            <li>NPM Publish 경험이 있습니다.</li>
-            <li>CSS의 Flexbox를 자유롭게 다루며 자주 사용합니다.</li>
+            <li>NPM에 직접 만든 모듈을 Publish한 경험이 있습니다.</li>
             <li>
               WebGL을 사용하는 PixiJS를 다루고 간단한 Vertex/Fragment Shader를 구현할 수 있습니다.
             </li>
+            <li>최근에 저는 ...</li>
+            <SubList>
+              <li><b>NextJS</b>를 사용하여 작업합니다.</li>
+              <li><b>React Query</b>, <b>Recoil</b>, <b>Axios</b>, <b>Tailwind CSS</b>, <b>Framer Motion</b>과 같은 모듈을 잘 활용하고 있습니다.</li>
+              <li>Atomic 컴포넌트 디자인 패턴을 선호합니다.</li>
+            </SubList>
           </List>
           <Grid>
             {TechIconDatabase.filter((each) => each.keywords.includes("frontend")).map(
@@ -127,14 +118,21 @@ const TechIndex = () => {
               2019년부터 <b>Express</b>, <b>Flask</b>를 접했습니다.
             </li>
             <li>
-              2021년부터 <b>NestJS</b>를 접했습니다.
+              2021년부터 <b>NestJS</b>, <b>Strapi</b>를 접했습니다.
             </li>
-            <li>Join의 중요성을 알고 있습니다.</li>
-            <li>다음과 같은 ORM 사용경험이 있습니다.</li>
+            <li>
+              2022년부터 <b>Serverless</b>, <b>Spring Boot</b>, <b>Kotlin</b>를 접했습니다.
+            </li>
+            <li>최근에 저는</li>
             <SubList>
-              <li>Ruby on rails ORM</li>
-              <li>TypeORM과 NestJS</li>
-              <li>Sequelizer과  Express</li>
+              <li>빠른 개발이 필요한 프로젝트에는 <b>Strapi</b>를 사용하고 있습니다!</li>
+              <li>서비스 구조가 단순하다면 <b>Serverless</b>를 사용하고 있습니다!</li>
+              <li>유지보수가 중요한 프로젝트일 시 <b>Spring Boot</b>, <b>Express</b>를 사용하고 있습니다!</li>
+            </SubList>
+            <li>아래와 같은 Microservice를 활용해본 적이 있습니다.</li>
+            <SubList>
+              <li>Redis (AWS ElastiCache)</li>
+              <li>Message Queue (AWS SQS)</li>
             </SubList>
           </List>
           <Grid>
@@ -150,8 +148,7 @@ const TechIndex = () => {
 
         <Section>
           <Title>
-            Infra / DevOps
-            <small>관심있습니다</small>
+            Others
           </Title>
           <List>
             <li>2020년부터 <b>Docker</b>, <b>Kubernetes</b>를 접했습니다.</li>
@@ -162,11 +159,16 @@ const TechIndex = () => {
             </SubList>
             <li>5대의 컴퓨터에 CentOS를 설치하고, Kubernetes를 구축한 경험이 있습니다.</li>
             <li>방화벽, 고정IP, 포트포워딩 설정 경험이 있습니다.</li>
-            <li>Nginx의 proxy-pass를 활용한 경험이 있습니다.</li>
-            <li>AWS의 다양한 리소스 사용 경험이 있습니다.</li>
+            <li>Nginx를 사용한 경험이 있습니다.</li>
+            <li>AWS의 다양한 리소스를 활용하고 있습니다.</li>
             <SubList>
-              <li>Amplify, Route53, VPC, EC2, S3, Lambda, Cognito, SNS, CloudFront 인썸니아 회사 근무 중 사용</li>
-              <li>Mechanical Turk 네이버 AI Lab 근무 중 사용</li>
+              <li>Amplify, Route53, VPC, EC2, S3, Lambda, Cognito, SNS 인썸니아 회사 근무 중 사용</li>
+              <li>Amplify, S3, Lambda, DynamoDB, Mechanical Turk 네이버 AI Lab 근무 중 사용</li>
+              <li>그외 ElastiCache(캐싱), ECR(도커 이미지 저장소), SQS(메시지 큐)</li>
+            </SubList>
+            <li>FFMPEG를 활용하여 GIF 병합, 영상처리 작업을 한 경험이 있습니다.</li>
+            <SubList>
+              <li>NFT 발행을 위한 민팅 작업</li>
             </SubList>
           </List>
           <Grid>

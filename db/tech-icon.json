@@ -347,8 +347,19 @@
     "icon": "kotlin.png",
     "description": "Java처럼 JVM에서 구동 될 수 있도록 나온 새로운 언어",
     "keywords": [
-      "language"
+      "language",
+      "backend"
     ],
     "recentDay": 0
+  },
+  {
+    "id": "serverless",
+    "title": "serverless",
+    "icon": "serverless.png",
+    "description": "AWS Lambda, DynamoDB, S3를 활용한 백엔드 프레임워크",
+    "keywords": [
+      "backend"
+    ],
+    "recentDay": 10
   }
 ]
