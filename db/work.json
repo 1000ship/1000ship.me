@@ -79,7 +79,7 @@
   {
     "linkHref": "https://waterbrush.1000ship.me/",
     "id": "water-brush",
-    "imageName": "water-brush.gif",
+    "imageName": "water-brush.webp",
     "supportVideo": false,
     "videoName": null,
     "title": "Waterbrush",
@@ -97,7 +97,7 @@
   {
     "linkHref": "https://1000ship.github.io/react-scroll-motion/",
     "id": "react-scroll-motion",
-    "imageName": "react-scroll-motion.gif",
+    "imageName": "react-scroll-motion.webp",
     "supportVideo": false,
     "videoName": null,
     "title": "react-scroll-motion",
