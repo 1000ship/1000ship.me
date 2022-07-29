@@ -14,10 +14,12 @@ const ProfileLeft = styled.div`
   flex: 1 0 400px;
   height: 400px;
   overflow: hidden;
+  position: relative;
 `;
-
 const ProfileImage = motion(styled.img`
   width: 100%;
+  position: absolute;
+  left: 0;
 `);
 const ProfileRight = styled.div`
   flex: 1 0 400px;
@@ -80,10 +82,10 @@ const HomePage: NextPage = () => {
         <ProfileLeft>
           <ProfileImage
             src="/img/profile.jpg"
-            initial={{ y: 0 }}
-            whileInView={{ y: -250 }}
+            layout
+            animate={{ bottom: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+            transition={{ duration: 2.5, ease: "easeInOut" }}
           />
         </ProfileLeft>
         <ProfileRight>
