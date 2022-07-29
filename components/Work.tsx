@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { FC, useState } from "react";
 import styled, { css } from "styled-components";
+import { motion } from "framer-motion";
 
 const Article = styled.article`
   cursor: pointer;
@@ -77,7 +78,12 @@ const Work: FC<WorkProps> = (props) => {
   } = data;
   return (
     <Link href={`/work/${id}`}>
-      <a>
+      <motion.a
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+      >
         <Article>
           <Image
             src={`/img/workspace/${imageName}`}
@@ -89,7 +95,7 @@ const Work: FC<WorkProps> = (props) => {
           <p>{description}</p>
           <small>{createdYear}</small>
         </Article>
-      </a>
+      </motion.a>
     </Link>
   );
 };

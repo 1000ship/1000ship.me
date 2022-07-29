@@ -4,6 +4,7 @@ import { RefCallback, useCallback } from "react";
 import styled from "styled-components";
 import Page from "../components/Page";
 import HomeTech from "./HomeTech";
+import { motion } from "framer-motion";
 
 const ProfileContainer = styled.main`
   display: flex;
@@ -14,9 +15,10 @@ const ProfileLeft = styled.div`
   height: 400px;
   overflow: hidden;
 `;
-const ProfileImage = styled.img`
+
+const ProfileImage = motion(styled.img`
   width: 100%;
-`;
+`);
 const ProfileRight = styled.div`
   flex: 1 0 400px;
   display: flex;
@@ -69,28 +71,20 @@ const ProfileRight = styled.div`
 `;
 
 const HomePage: NextPage = () => {
-  const profileImageRef: RefCallback<HTMLImageElement> = useCallback((el) => {
-    if (!el) return;
-    const totalY = el.scrollHeight - el.offsetHeight;
-    let scrollY = 0;
-    let targetY = totalY;
-    const scrollAnimate = () => {
-      scrollY += (targetY - scrollY) * 0.01;
-      el.scrollTo(0, scrollY);
-      requestAnimationFrame(scrollAnimate);
-    };
-    requestAnimationFrame(scrollAnimate);
-    el.querySelector("img").onload = () => requestAnimationFrame(scrollAnimate);
-  }, []);
-
   return (
     <Page>
       <Head>
         <title>Software Developer 1000ship</title>
       </Head>
       <ProfileContainer>
-        <ProfileLeft ref={profileImageRef}>
-          <ProfileImage src="/img/profile.jpg" />
+        <ProfileLeft>
+          <ProfileImage
+            src="/img/profile.jpg"
+            initial={{ y: 0 }}
+            whileInView={{ y: -250 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2, ease: "easeInOut" }}
+          />
         </ProfileLeft>
         <ProfileRight>
           <div className="horizontal">

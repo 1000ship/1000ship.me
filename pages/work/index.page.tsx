@@ -15,23 +15,23 @@ const Section = styled.section`
 
 const SectionHeader = styled.div`
   padding-top: 8px;
-  background-color: rgba(255, 255, 255, 0.90);
+  background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(16px);
   position: sticky;
   top: 45px;
   z-index: 10;
-`
+`;
 
 const SectionTitle = styled.h2`
   font-size: 18px;
   font-weight: bold;
   margin-left: 16px;
-`
+`;
 
 const Split = styled.div`
   border-top: 1px solid #ddd;
   margin-top: 8px;
-`
+`;
 
 const WorkGrid = styled.div`
   display: grid;
@@ -45,10 +45,9 @@ const WorkGrid = styled.div`
   @media (min-width: 900px) {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
   }
-`
+`;
 
 const WorkIndex = () => {
-
   const uniqueArrays = useCallback((strArr) => {
     const unique = [];
     for (let i = 0; i < strArr.length; i++) {
@@ -57,28 +56,32 @@ const WorkIndex = () => {
       }
     }
     return unique;
-  },[]);
+  }, []);
 
-  const yearSections = uniqueArrays(WorkDatabase.map(work => work.createdYear))
+  const yearSections = uniqueArrays(
+    WorkDatabase.map((work) => work.createdYear)
+  );
 
   return (
     <Page>
       <Head>
         <title>Work | 1000ship</title>
       </Head>
-      {yearSections.map((year) => 
+      {yearSections.map((year) => (
         <Section key={year}>
           <SectionHeader>
             <SectionTitle>{year}</SectionTitle>
-            <Split/>
+            <Split />
           </SectionHeader>
           <WorkGrid>
-            {WorkDatabase.filter(work => work.createdYear === year).map((work) => (
-              <Work key={work.id} data={work} />
-            ))}
+            {WorkDatabase.filter((work) => work.createdYear === year).map(
+              (work) => (
+                <Work key={work.id} data={work} />
+              )
+            )}
           </WorkGrid>
         </Section>
-      )}
+      ))}
     </Page>
   );
 };
